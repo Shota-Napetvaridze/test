@@ -47,10 +47,10 @@ def substitution(plaintext, secret_key, encrypt_decrypt):
         else:
             encrypted_text += char
     if encrypt_decrypt == "e":  # Encryption
-        outhpath = "encrypted_substitution_output.txt"
+        outhpath = "en_sub_output.txt"
         save_file(outhpath, encrypted_text)
     elif encrypt_decrypt == "d":  # Decryption
-        outhpath = "decrypted_substitution_output.txt"
+        outhpath = "de_sub_output.txt"
         save_file(outhpath, encrypted_text)
 
 
@@ -81,7 +81,7 @@ def transposition(plaintext, secret_key, encrypt_decrypt):
                 encrypted_cipher += ''.join([row[curr_index]])
             key_index += 1
 
-        outhpath = "encrypted_transposition_output.txt"
+        outhpath = "en_trans_output.txt"
         save_file(outhpath, encrypted_cipher)
         print(encrypted_cipher)
 
@@ -114,7 +114,7 @@ def transposition(plaintext, secret_key, encrypt_decrypt):
 
         decrypted_cipher = ''.join(sum(d_cipher, []))
 
-        outhpath = "decrypted_transposition_output.txt"
+        outhpath = "de_tran_output.txt"
         save_file(outhpath, decrypted_cipher)
         print(decrypted_cipher)
 
