@@ -1,1 +1,1 @@
-# Encryption/decryption program.
+# Encryption/decryption
