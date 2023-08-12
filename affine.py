@@ -9,6 +9,7 @@ def mod_inverse(a, m):
             return i
     return None
 
+
 def affine_encrypt(text, a, b):
     encrypted_text = ""
     for char in text:

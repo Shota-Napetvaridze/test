@@ -1,14 +1,15 @@
+'''
+Classic substitution and transpostion cipher implementation
+'''
+
 import os
 import math
-
-
 
 def read_file(file_path):
     plaintext = ''
     with open(file_path, 'r') as file:
         plaintext = file.read(-1)
     return plaintext
-
 
 def save_file(file_path, words):
     f = open(file_path, "w+")
